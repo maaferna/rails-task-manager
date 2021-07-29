@@ -1,0 +1,17 @@
+<!-- app/views/tasks/index.html.erb -->
+
+<h1>Tasks</h1>
+
+<div class="d-flex justify-content-between align-items-center">
+  <ul>
+    <% @tasks.each do |element| %>
+      <% check = element.completed ? "✅" : "⛔" %>
+      <li class="d-flex justify-content-between">
+        <%= check %><%= link_to "#{element[:title]}", task_path(element[:id]) %><%= " • " %><%= link_to "🗑", task_path(element), method: :delete, data: { confirm: "Are you sure?" } %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+  
+  
