@@ -1,3 +1,36 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.form_group {
+  background: blue;
+  display: flex;
+  box-sizing: border-box
+}
+
+.form-control {
+  box-sizing: border-box;
+  display: flex;
+  float: none;
+  padding: 10px;
+}
+
+
+.btn-submit {
+  width: auto;
+  padding: 9px 15px;
+  background: #cccccc;
+  border: 0;
+  font-size: 14px;
+  color: #BBBBBB;
+}
+
+.btn-submit:hover {
+  width: auto;
+  padding: 9px 15px;
+  background: #cccccc;
+  border: 0;
+  font-size: 14px;
+  color: #FFFFFF;
+}
